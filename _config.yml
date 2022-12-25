@@ -4,4 +4,6 @@ plugins:
 
 title: Guncy
 description: Blockchain Technology
-site.github:
+
+github.is_project_page: false
+

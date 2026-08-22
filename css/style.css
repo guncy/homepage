@@ -1,0 +1,539 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本設定 */
+:root {
+    --primary-color: #2793f4;
+    --secondary-color: #ffffff;
+    --text-color: #1d1d1f;
+    --text-light: #86868b;
+    --background-light: #f5f5f7;
+    --border-color: #d2d2d7;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --accent-blue: #2793f4;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'SF Pro Display', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+.header {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 44px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -0.03em;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--text-light);
+}
+
+/* ヒーローセクション */
+.hero {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 120px 0 100px;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.003em;
+}
+
+.hero-description {
+    font-size: 21px;
+    margin-bottom: 40px;
+    color: var(--text-light);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.016em;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    line-height: 1.2;
+    letter-spacing: -0.022em;
+}
+
+.btn-primary {
+    background: var(--accent-blue);
+    color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background: #1f76c3;
+    color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-blue);
+    color: var(--secondary-color);
+}
+
+/* セクション共通 */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.003em;
+}
+
+/* 事業内容セクション */
+.services {
+    background: var(--background-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: var(--secondary-color);
+    padding: 60px 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.service-icon {
+    font-size: 56px;
+    margin-bottom: 32px;
+    opacity: 0.8;
+}
+
+.service-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.007em;
+}
+
+.service-card p {
+    color: var(--text-light);
+    line-height: 1.5;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+
+/* 会社概要セクション */
+.about-content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    font-size: 40px;
+    margin-bottom: 32px;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 21px;
+    margin-bottom: 60px;
+    color: var(--text-light);
+    line-height: 1.4;
+    letter-spacing: 0.016em;
+    text-align: center;
+}
+
+.company-info {
+    display: grid;
+    gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background: var(--secondary-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-item strong {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+
+.info-item span {
+    color: var(--text-light);
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+
+/* お問い合わせセクション */
+.contact {
+    background: var(--background-light);
+}
+
+.contact-content {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 21px;
+    margin-bottom: 60px;
+    color: var(--text-light);
+    line-height: 1.4;
+    letter-spacing: 0.016em;
+}
+
+.contact-info {
+    display: grid;
+    gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background: var(--secondary-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-item strong {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+
+.contact-item span {
+    color: var(--text-light);
+    font-size: 17px;
+    letter-spacing: -0.022em;
+}
+
+/* フッター */
+.footer {
+    background: var(--background-light);
+    color: var(--text-light);
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo .logo-text {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.footer-text {
+    color: var(--text-light);
+    font-size: 12px;
+    letter-spacing: -0.01em;
+}
+
+/* 言語セレクター */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-label {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.language-select {
+    background: var(--background-light);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-select:hover {
+    background: var(--secondary-color);
+    border-color: var(--text-light);
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(39, 147, 244, 0.2);
+}
+
+.language-select option {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 834px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .hero-description {
+        font-size: 19px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .service-card {
+        padding: 50px 32px;
+    }
+
+    .service-card h3 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 19px;
+    }
+
+    .contact-description {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav-container {
+        padding: 10px 20px;
+    }
+
+    .hero-container {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 80px 0 80px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+        margin-bottom: 32px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+
+    .service-card {
+        padding: 40px 24px;
+    }
+
+    .service-card h3 {
+        font-size: 21px;
+    }
+
+    .service-card p {
+        font-size: 15px;
+    }
+
+    .about-text h3 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .contact-description {
+        font-size: 17px;
+    }
+
+    .info-item,
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}

@@ -19,8 +19,6 @@ const translations = {
         service1_desc: "最新のブロックチェーン技術を活用したシステム開発・コンサルティングサービスを提供します。",
         service2_title: "ブロックチェーンバリデータ事業",
         service2_desc: "安全で信頼性の高いバリデータサービスを通じて、ブロックチェーンネットワークの運営をサポートします。",
-        service3_title: "NFT関連サービス開発",
-        service3_desc: "NFTマーケットプレイスやNFTを活用したサービスの企画・開発を行います。",
         service4_title: "DX関連サービス開発",
         service4_desc: "デジタルトランスフォーメーションを推進するためのシステム開発・導入支援を提供します。",
         
@@ -65,8 +63,6 @@ const translations = {
         service1_desc: "We provide system development and consulting services utilizing the latest blockchain technology.",
         service2_title: "Blockchain Validator Services",
         service2_desc: "We support blockchain network operations through secure and reliable validator services.",
-        service3_title: "NFT Service Development",
-        service3_desc: "We plan and develop NFT marketplaces and services utilizing NFT technology.",
         service4_title: "DX Service Development",
         service4_desc: "We provide system development and implementation support to promote digital transformation.",
         
@@ -111,8 +107,6 @@ const translations = {
         service1_desc: "提供运用最新区块链技术的系统开发和咨询服务。",
         service2_title: "区块链验证器业务",
         service2_desc: "通过安全可靠的验证器服务，支持区块链网络的运营。",
-        service3_title: "NFT相关服务开发",
-        service3_desc: "进行NFT市场和运用NFT的服务的企划・开发。",
         service4_title: "DX相关服务开发",
         service4_desc: "提供推进数字化转型的系统开发和导入支持。",
         
@@ -157,8 +151,6 @@ const translations = {
         service1_desc: "최신 블록체인 기술을 활용한 시스템 개발・컨설팅 서비스를 제공합니다.",
         service2_title: "블록체인 밸리데이터 사업",
         service2_desc: "안전하고 신뢰성 높은 밸리데이터 서비스를 통해 블록체인 네트워크 운영을 지원합니다.",
-        service3_title: "NFT 관련 서비스 개발",
-        service3_desc: "NFT 마켓플레이스나 NFT를 활용한 서비스의 기획・개발을 진행합니다.",
         service4_title: "DX 관련 서비스 개발",
         service4_desc: "디지털 트랜스포메이션을 추진하기 위한 시스템 개발・도입 지원을 제공합니다.",
         
